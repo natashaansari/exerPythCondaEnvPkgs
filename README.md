@@ -37,34 +37,34 @@
 
 |   Concept   |         Description or short answer         |
 |     ---     |                     ---                     |
-|What is the purpose of having different environments?     |(enter description or short answer here)|
-|What is the default package manager in Python?            |(enter description or short answer here)|
-|How do you manage environments and packages in Anaconda?  |(enter description or short answer here)|
-|`conda list`       |(enter description or short answer here)|
-|`conda env list`       |(enter description or short answer here)|
-|How do you keep your base environment unchanged?       |(enter description or short answer here)|
-|What is the link to the Conda cheat sheet? (link in video notes is broken)      |(enter description or short answer here)|
-|`conda create --name XXXX`       |(enter description or short answer here)|
-|`source activate XXXX`       |(enter description or short answer here)|
-|`conda install YYYY`       |(enter description or short answer here)|
-|channels in Conda       |(enter description or short answer here)|
-|`conda install -c ZZZZ YYYY`       |(enter description or short answer here)|
-|`conda config --show channels`       |(enter description or short answer here)|
-|`conda config --add channels ZZZZ`       |(enter description or short answer here)|
-|conda-forge.org       |(enter description or short answer here)|
-|`source deactivate`       |(enter description or short answer here)|
-|`conda config --get channels`       |(enter description or short answer here)|
+|What is the purpose of having different environments?     |Having a specific environment for each project without needing separate computers|
+|What is the default package manager in Python?            |pip|
+|How do you manage environments and packages in Anaconda?  |Conda does both|
+|`conda list`       |lists all the default packages with Anaconda|
+|`conda env list`       |lists all environments with Anaconda3|
+|How do you keep your base environment unchanged?       |creating a new envrionment each time|
+|What is the link to the Conda cheat sheet?     |https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf|
+|`conda create --name XXXX`       |create a new environment|
+|`source activate XXXX`       |how to start working in a different environment|
+|`conda install YYYY`       |install packages into specific environments|
+|channels in Conda       |how to find other packages outside of default|
+|`conda install -c ZZZZ YYYY`       |how to look for packages in different channels (one time thing)|
+|`conda config --show channels`       |shows which channel we are in|
+|`conda config --add channels ZZZZ`       |how to add specific channels to channel list|
+|conda-forge.org       |different page (channel) also offering packages|
+|`source deactivate`       |how to remove an environment|
+|`conda config --get channels`       |different priorities for conda to look for packages|
 
 * After creating the environments he created in the video on your computer, what would the results of running the command `conda env list` look like with the da35 environment activated. Paste the output from your command prompt in the code block below.
 
-```
-#Paste your results here.
+/opt/anaconda3/lib/python3.8/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+# conda environments:
+#
+base                  *  /opt/anaconda3
+da35                     /opt/anaconda3/envs/da35
 
 
-```
 * What command would you use to remove the environments you created for this exercise from your computer?
 
-```
-#Type the command here.
-
-```
+conda deactivate
